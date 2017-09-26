@@ -17,19 +17,13 @@ int main() {
       "§was gehts ab sdf dsfsfd   "
     };
 
+    int i, j, count = 0;
 
 
-/* here, do your time-consuming job */
-
-
-    int i, j;
-
-// Schleife fuer Zeilen, Y-Achse
     for (i = 0; i < 9; i++) {
-        for (j = 0; j < 49 && brett[i][j] != '\0'; j++) {
+        for (j = 0; brett[i][j] != '\0'; j++) {
             printf("%c",brett[i][j]);
             if(brett[i][j] == ' '){
-                int count;
                 count++;
                 printf("%i",count);
             }
